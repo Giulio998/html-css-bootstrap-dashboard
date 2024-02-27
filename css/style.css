@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --primaryColor:orange;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-app{
+    width: 100%;
+}
+
+.widht100{
+    width: 100%;
+}
+
+.widht40{
+    width: 40% !important;
+}
+
+.widht30{
+    width: 30%;
+}
+
+.flex{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+.row{
+    --bs-gutter-x: 0 !important;
+}
+
+/* Header */
+
+header .container-app{
+    background-color: whitesmoke;
+}
+
+header li{
+    margin: 0 10px;
+}
+
+.icon-bell{
+    color: var(--primaryColor);
+}
+
+.mobile-logo{
+    height: 37px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.navbar-content-logo-desktop{
+    display: none;
+    
+}
+
+/* Main */
+
+.mainContainer{
+    height: calc(100vh - 55px);
+}
+
+/* SideBar */
+
+.sideBar .sideBack{
+    background-color: rgb(16, 16, 27);
+    background-image: url(../img/sidebar-bg.png);
+    opacity: 100%;
+    height: calc(100vh - 55px);
+}
+
+.sideBar span{
+   margin-left: 5px;
+   
+}
+
+
+
+/* MainBar */
+
+
+
+.blueBadge{
+    background-color: rgb(2 0 65 / 32%);
+}
+
+
+
+
+
+
+
+/* MainContent */
+
+.mainContent a{
+    text-decoration: underline;
+    color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+
+@media screen and (min-width:768px){
+    .reorder{
+        order: 1;
+    }
+
+    .mainContent .hidden{
+        display:table-cell;
+    }
+
+}
+
+
+@media screen and (min-width:992px){
+    .hidden{display: block;}
+   .navbar-content-logo-desktop{
+    display: block;}
+    .mobile-logo{
+        display: none;
+    }
+
+    header .hidden{
+        display: flex;
+    }
+
+    .shower{
+        display: none;
+    }
+
+    .customCanvas{
+        width: 40% !important;
+    }
+  
+}
+
+
+
