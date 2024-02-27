@@ -83,7 +83,7 @@ header li{
     background-color: rgb(16, 16, 27);
     background-image: url(../img/sidebar-bg.png);
     opacity: 100%;
-    height: calc(100vh - 55px);
+    min-height: calc(100vh - 55px);
 }
 
 .sideBar span{
